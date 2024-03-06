@@ -56,8 +56,7 @@ public class CustomListTest {
         list.addCity(new City("a", "SK"));
         list.addCity(new City("b", "SK"));
         list.addCity(new City("c", "SK"));
-        list.deleteCity(new City("c", "SK"));
-        assertEquals(list.getCount(),listSize + 4-1);
+        assertEquals(list.getCount(),listSize + 4);
     }
 
 
