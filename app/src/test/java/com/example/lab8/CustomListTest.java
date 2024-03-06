@@ -48,6 +48,18 @@ public class CustomListTest {
             list.deleteCity(acity1); });
     }
 
+    @Test
+    public void countCityTest(){
+        list = MockCityList();
+        int listSize = list.getCount();
+        list.addCity(new City("Estevan", "SK"));
+        list.addCity(new City("a", "SK"));
+        list.addCity(new City("b", "SK"));
+        list.addCity(new City("c", "SK"));
+        list.deleteCity(new City("c", "SK"));
+        assertEquals(list.getCount(),listSize + 4-1);
+    }
+
 
 
 }
